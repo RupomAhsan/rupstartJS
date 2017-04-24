@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "JavaScript development environment starter",
   "scripts": {
+    "prestart":"node buildScripts/startMessage.js",
+    "start":"node buildScripts/srcServer.js"
   },
   "author": "Rupom Ahsan",
   "license": "MIT",
