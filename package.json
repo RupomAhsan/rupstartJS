@@ -4,7 +4,11 @@
   "description": "JavaScript development environment starter",
   "scripts": {
     "prestart":"node buildScripts/startMessage.js",
-    "start":"node buildScripts/srcServer.js"
+    "start":"npm-run-all --parallel security-check open:src",
+    "open:src":"node buildScripts/srcServer.js",
+    "security-check":"nsp check",
+    "share":"npm-run-all --parallel localtunnel open:src",
+    "localtunnel":"lt --port 3000"
   },
   "author": "Rupom Ahsan",
   "license": "MIT",
