@@ -1,7 +1,16 @@
-import './index.css';
+import {getUsers} from './api/userApi';
 
-import numeral from 'numeral';
-
-const courseValue=numeral(1000).format('$0,0.00');
-//debugger;
-console.log(`I would pay ${courseValue} for this awesome course!`); // eslint-disable-line no-console
+//Populate the table of users using user API
+let usersContent = '';
+  getUsers().then((users) => {
+    users.forEach((user) => {
+      usersContent += `<tr>
+        <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
+        <td>${user.id}</td>
+        <td>${user.firstName}</td>
+        <td>${user.lastName}</td>
+        <td>${user.email}
+      </tr>`;
+    });
+    global.document.getElementById('users').innerHTML = usersContent;
+});
