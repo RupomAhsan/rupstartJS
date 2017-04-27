@@ -1,10 +1,10 @@
-export default function getBaseUrl(){
+/*export default function getBaseUrl(){
   const inDevelopment=window.location.hostname==='localhost';
   return inDevelopment?'http://localhost:3001/':'/';
-}
+}*/
 
-/*export default function getBaseUrl() {
- return getQueryStringParameterByName('useMockApi') ? "http://localhost:3001/" : "https://desolate-beyond-55700.herokuapp.com/";
+export default function getBaseUrl() {
+ return getQueryStringParameterByName('useMockApi') ? "http://localhost:3001/" :"/"; //"https://desolate-beyond-55700.herokuapp.com/";
 }
 
 function getQueryStringParameterByName(name, url) {
@@ -17,4 +17,4 @@ function getQueryStringParameterByName(name, url) {
   var results = regex.exec(url);
   if (results == null) return "";
   else return decodeURIComponent(results[1].replace(/\+/g, " "));
-}*/
+}
