@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 58210514,
+      "firstName": "Zack",
+      "lastName": "Paucek",
+      "email": "Kassandra80@yahoo.com"
+    },
+    {
+      "id": 4887937,
+      "firstName": "Dayne",
+      "lastName": "Gaylord",
+      "email": "Llewellyn47@hotmail.com"
+    },
+    {
+      "id": 40392522,
+      "firstName": "Alva",
+      "lastName": "Toy",
+      "email": "Bell.Quitzon@yahoo.com"
+    },
+    {
+      "id": 18315428,
+      "firstName": "Pansy",
+      "lastName": "Hoeger",
+      "email": "Dusty46@hotmail.com"
+    }
+  ]
+}
