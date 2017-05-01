@@ -29,8 +29,9 @@
   },
   "devDependencies": {
     "babel-cli": "6.16.0",
-    "babel-core": "6.17.0",
-    "babel-loader": "6.2.5",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-env": "^1.4.0",
     "babel-preset-latest": "6.16.0",
     "babel-register": "6.16.3",
     "chai": "3.5.0",
@@ -56,10 +57,10 @@
     "open": "0.0.5",
     "rimraf": "2.5.4",
     "style-loader": "^0.13.1",
-    "webpack": "1.13.2",
-    "webpack-dev-middleware": "1.8.4",
-    "webpack-hot-middleware": "2.13.0",
-    "webpack-md5-hash": "0.0.5",
+    "webpack": "^2.4.1",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.0",
+    "webpack-md5-hash": "^0.0.5",
     "whatwg-fetch": "^2.0.3"
   }
 }
